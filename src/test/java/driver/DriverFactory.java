@@ -15,7 +15,7 @@ public class DriverFactory {
         if (OS.isFamilyMac()) {
             chromeDriverLocation = "src/test/resources/drivers/chromedriver";
         } else if (OS.isFamilyWindows()) {
-            chromeDriverLocation = "\\src\\test\\resources\\drivers\\chromedriver.exe";
+            chromeDriverLocation = "\\src\\test\\resources\\drivers\\chromedriver";
         } else {
             throw new RuntimeException("[ERR] Coudn't detect the OS");
         }

@@ -6,4 +6,6 @@ public interface Urls {
     String IFRAME_SLUG = "/iframe";
     String HOVER_SLUG = "/hovers";
     String DYNAMIC_CONTROL_SLUG = "/dynamic_controls";
+    String JS_ALERT_SLUG = "/javascript_alerts";
+    String FLOATING_MENUS_SLUG = "/floating_menu";
 }
