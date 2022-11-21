@@ -15,7 +15,7 @@ public class DriverFactory {
         if (OS.isFamilyMac()) {
             chromeDriverLocation = "src/test/resources/drivers/chromedriver";
         } else if (OS.isFamilyWindows()) {
-            chromeDriverLocation = "\\src\\test\\resources\\drivers\\chromedriver.exe";
+            chromeDriverLocation = "\\src\\test\\resources\\drivers\\chromedriver";
         } else {
             throw new RuntimeException("[ERR] Coudn't detect the OS");
         }
@@ -26,8 +26,8 @@ public class DriverFactory {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--igcognito");
 
-        WebDriver driver = new ChromeDriver(chromeOptions);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5L));
+//        WebDriver driver = new ChromeDriver(chromeOptions);
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5L));
 
         return new ChromeDriver(chromeOptions);
 
