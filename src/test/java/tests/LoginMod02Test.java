@@ -1,7 +1,6 @@
 package tests;
 
 import driver.DriverFactory;
-import models.pages.LoginPageMod01;
 import models.pages.LoginPageMod02;
 import org.openqa.selenium.WebDriver;
 import url.Urls;
@@ -10,7 +9,7 @@ public class LoginMod02Test {
     public static void main(String[] args) {
         WebDriver driver = DriverFactory.getChromeDriver();
         try{
-            driver.get(Urls.BASE_URL.concat(Urls.LOGIN_FORM_SLUG));
+            driver.get(Urls.HEROKU_BASE_URL.concat(Urls.LOGIN_FORM_SLUG));
 
             LoginPageMod02 loginPage = new LoginPageMod02(driver);
             loginPage.inputUsername("Teo");

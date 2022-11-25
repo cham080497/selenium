@@ -14,7 +14,7 @@ public class IFrame {
 
         try{
             // Navigate to the dropdown page
-            driver.get(Urls.BASE_URL.concat(Urls.IFRAME_SLUG));
+            driver.get(Urls.HEROKU_BASE_URL.concat(Urls.IFRAME_SLUG));
 
             //Locate the iframe
             WebElement IFrameElem = driver.findElement(By.cssSelector("iframe[^id='mce']"));

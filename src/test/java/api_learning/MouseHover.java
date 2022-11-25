@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import support.ui.SelectEx;
 import url.Urls;
 
 import java.util.List;
@@ -21,7 +20,7 @@ public class MouseHover {
 
         try{
             // Navigate to the dropdown page
-            driver.get(Urls.BASE_URL.concat(Urls.HOVER_SLUG));
+            driver.get(Urls.HEROKU_BASE_URL.concat(Urls.HOVER_SLUG));
 
             //locate to the all image
             List<WebElement> figuresElem = driver.findElements(figureSel);

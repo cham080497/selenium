@@ -24,7 +24,7 @@ public class JsAlerts implements Urls {
         try {
 
             //navigate to the target page
-            driver.get(BASE_URL.concat(JS_ALERT_SLUG));
+            driver.get(HEROKU_BASE_URL.concat(JS_ALERT_SLUG));
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5L));
             boolean isAcceptedAlert = true;
 

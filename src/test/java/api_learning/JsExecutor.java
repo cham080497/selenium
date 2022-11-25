@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import support.ui.SelectEx;
 import url.Urls;
 
 public class JsExecutor implements Urls {
@@ -13,7 +12,7 @@ public class JsExecutor implements Urls {
         WebDriver driver = DriverFactory.getChromeDriver();
 
         try {
-            driver.get(BASE_URL.concat(FLOATING_MENUS_SLUG));
+            driver.get(HEROKU_BASE_URL.concat(FLOATING_MENUS_SLUG));
             JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
             PageHelper pageHelper = new PageHelper(jsExecutor);
 
@@ -32,7 +31,7 @@ public class JsExecutor implements Urls {
             Thread.sleep(2000);
 
             //go to dynamic control page
-            driver.get(BASE_URL.concat(DYNAMIC_CONTROL_SLUG));
+            driver.get(HEROKU_BASE_URL.concat(DYNAMIC_CONTROL_SLUG));
             By checkboxFormSel = By.id("checkbox-example");
             By inputFormSel = By.cssSelector("#input-example");
 
