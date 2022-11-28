@@ -21,8 +21,8 @@ public class LoginPageTest {
           HerokuLoginPage loginPage = new HerokuLoginPage(driver);
 //            System.out.println(loginPage.footerComp().getLinkText());
 
-            LoginFormComponent loginFormComp = loginPage.loginFormComp();
-            loginFormComp.usernameElem.senKeys("teo");
+//            LoginFormComponent loginFormComp = loginPage.loginFormComp();
+//            loginFormComp.usernameElem.senKeys("teo");
             //debug
             Thread.sleep(2000);
 

@@ -18,7 +18,7 @@ public class PageFooterTest {
 //                    .clickOnLoginBtn();
 
             HerokuLoginPage loginPage = new HerokuLoginPage(driver);
-            System.out.println(loginPage.footerComp().getLinkText());
+            //System.out.println(loginPage.footerComp().get());
             //debug
             Thread.sleep(2000);
 
